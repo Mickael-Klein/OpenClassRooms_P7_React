@@ -1,0 +1,24 @@
+@import "../../utils/style/Variables.scss";
+
+.host {
+  display: flex;
+  gap: 10px;
+
+  &__name {
+    font-size: 18px;
+    width: min-content;
+    text-align: right;
+  }
+
+  &__pictureContainer {
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+    border-radius: 50%;
+
+    img {
+      object-fit: scale-down;
+      background: $colorSecondary;
+    }
+  }
+}

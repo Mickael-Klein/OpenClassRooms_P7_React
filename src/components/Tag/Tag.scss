@@ -1,0 +1,27 @@
+@import "../../utils/style/Variables.scss";
+
+.tag {
+  min-width: 115px;
+  padding: 0.35rem 2rem;
+  background: $colorPrimary;
+  border-radius: $smallBorderRadius;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  @media screen and (max-width: 769px) {
+    min-width: 0px;
+    padding: 0.35rem 1rem;
+  }
+
+  p {
+    color: white;
+    font-size: 14px;
+    margin: 0;
+
+    @media screen and (max-width: 769px) {
+      font-size: 12px;
+    }
+  }
+}

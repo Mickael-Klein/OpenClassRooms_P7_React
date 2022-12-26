@@ -1,0 +1,80 @@
+@import "../../utils/style/Variables.scss";
+
+.cardWrapper {
+  width: 25vw;
+  height: 25vw;
+  min-width: 340px;
+  min-height: 340px;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  border-radius: $smallBorderRadius;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  background-color: #ff6060;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background: linear-gradient(
+    //   to bottom,
+    //   rgba(0, 0, 0, 0) 50%,
+    //   rgba(0, 0, 0, 0.45) 100%
+    // );
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+    z-index: 2;
+  }
+
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 14px rgba(33, 33, 33, 0.4);
+    img {
+      transform: scale(1.05);
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+  }
+
+  h3 {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 50%;
+    z-index: 3;
+  }
+
+  @media screen and (max-width: 1270px) {
+    width: 25vw;
+    height: 25vw;
+    min-width: 250px;
+    min-height: 250px;
+  }
+
+  @media screen and (max-width: 968px) {
+    width: 35vw;
+    height: 35vw;
+    min-width: 250px;
+    min-height: 250px;
+  }
+
+  @media screen and (max-width: 769px) {
+    width: 100%;
+  }
+}

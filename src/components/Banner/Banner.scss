@@ -1,0 +1,58 @@
+.Banner {
+  width: 100%;
+  height: fit-content;
+  border-radius: 25px;
+  overflow: hidden;
+  cursor: default;
+  position: relative;
+
+  @media screen and (max-width: 769px) {
+    height: 110px;
+  }
+
+  &--about {
+    @media screen and (max-width: 769px) {
+      height: 223px;
+
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+  }
+
+  .bannerText {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    font-size: 48px;
+    color: white;
+
+    @media screen and (max-width: 769px) {
+      width: 70%;
+      font-size: 24px;
+      left: 20px;
+      top: 25px;
+      transform: translate(0%, 0%);
+      text-align: left;
+    }
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+
+    @media screen and (max-width: 769px) {
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+header {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+  gap: 40px;
+
+  @media screen and (max-width: 768px) {
+    a {
+      width: 48%;
+    }
+    img {
+      width: 145px;
+      height: 47px;
+    }
+  }
+}

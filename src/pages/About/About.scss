@@ -1,0 +1,22 @@
+.about {
+  margin-top: 20px;
+  margin-bottom: 200px;
+
+  .Banner {
+    margin-bottom: 30px;
+  }
+
+  .dropdowns {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+
+    @media screen and (max-width: 769px) {
+      width: 100%;
+    }
+  }
+}
